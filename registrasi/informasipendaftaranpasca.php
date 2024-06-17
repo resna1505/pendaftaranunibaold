@@ -50,7 +50,7 @@ $q = "SELECT
         <table> 
             <tr>
                 <td>1.</td>
-                <td> Klik menu <a class='tambahcalonpasca' href='../lib/termsandcondition.php'> Registrasi calon mahasiswa </a><script>
+                <td> Klik menu <a class='tambahcalonpasca' href='../lib/termsandconditionpasca.php'> Registrasi calon mahasiswa </a><script>
                     jQuery(document).ready(function () {
                         jQuery('a.tambahcalonpasca').colorbox();
                     });
