@@ -1,0 +1,26 @@
+
+  "periksaroot"
+  periksaroot
+  "file"
+  file
+
+  "imgsizeproph"
+  imgsizeproph
+  60
+  60
+  "dirgambar"
+  1  /headerimg.swf'' quality='high' bgcolor='#ffffff'
+
+width='850' height=200 
+
+name='mymoviename' align='right' type='application/x-shockwave-flash' 
+
+pluginspage='http://www.macromedia.com/go/getflashplayer'> 
+
+
+</embed> 
+
+</object> 
+</td></tr></table>
+
+ 		</div><!--siteHeader -->

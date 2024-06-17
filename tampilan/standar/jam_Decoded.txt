@@ -1,0 +1,27 @@
+
+  "date_default_timezone_set"
+  "Asia/Jakarta"
+  Asia/Jakarta
+  Asia/Jakarta  "periksaroot"
+  Asia/Jakarta  periksaroot
+  Asia/Jakarta  "getdate"
+  Asia/Jakarta  "time"
+  Asia/Jakarta  time
+
+  "<s"
+  "cript Language="JavaScript">\nvar timerID = null;\nvar timerRunning = false;\nvar menit = "
+  cript Language="JavaScript">
+var timerID = null;
+var timerRunning = false;
+var menit =   "minutes"
+  ";\nvar detik = "
+  ;
+var detik =   "seconds"
+  ";\nvar jamku = "
+  ;
+var jamku =   "hours"
+  ";\n\nvar n = new Date();\n//var lmenit = n.getMinutes();\nvar ldetik = n.getSeconds();\n//var ljam = n.getHours();\n\n\nfunction stopclock (){\n        if(timerRunning)\n                clearTimeout(timerID);\n        timerRunning = false;\n}\n\n\nfunction showtime () {\n        var now = new Date();\n//        var hours = now.getHours();\n //       var minutes = now.getMinutes();\n        var sec"
+  "onds = now.getSeconds();\n\n			if (((seconds > ldetik) && (seconds!=0))||(seconds==0 && ldetik==59)) {\n				if (detik < 59) {\n					detik++;\n				} else {\n					detik=0;\n					if (menit < 59) {\n						menit ++;\n					} else {\n						menit=0;\n						if (jamku < 23)  {\n							jamku++;\n						} else {\n							jamku=0;\n						}\n					}\n				}\n				\n			}\n			ldetik=seconds;\n\n        var timeValue ;\n "
+  "       timeValue = ((jamku < 10) ? "0" : "") + jamku;\n        timeValue += ((menit < 10) ? ":0" : ":") + menit;\n        timeValue += ((detik < 10) ? ":0" : ":") + detik;\n        window.status = timeValue;\n       jam.value= timeValue;\n        timerID = setTimeout("showtime()",500);\n        timerRunning = true;\n\n}\nfunction startclock () {\n        stopclock();\n        showtime();\n}\n</script>"
+  "[Obfuscated]0D 0A "
+  1

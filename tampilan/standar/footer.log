@@ -1,0 +1,210 @@
+========== Ioncube_Decoder 1.1.40  LogFile ==========
+
+=========> S t a g e  0  -  Getting RawData (UnBase64-Raw.bin)
+
+Opening C:\AppServ\www\siakad\tampilan\standar\footer.php
+000003AF -> Start of ionCubeData...
+0000071E -> 0000036F Bytes read.
+IC_Base64_Marker: '4+oV' Decoding Base64->Bin...
+
+=========> S t a g e  1  -  Validating RawData
+
+ionCubeVersionType: 3CCC22E1 [Encrypted: 149FEC13]
+ioncube_Version_Type 3
+
+=========> S t a g e  2  -  Processing RawData
+
+RawBinData_Size: 00000636
+FileSizeKey: 2395BA89 (RawBinData_Size + 12321) Xor &H23958CDE
+Header_FileSizeKey: 2395BA87
+Header_FileSizeKey and FileSizeKey are different! (Difference: 00000002)
+Note: RawBinData_Size calculate from Header_FileSizeKey is: 000006B8  (Difference: 00000082)
+Header_Size: 000000BE (InitKey for MT: 3130DFE6)
+Adler32_CRC for 'IC_Raw[0004]..[00DD]' and calculated MATCH. CRC: D9866A39
+
+=========> S t a g e  3  -  Extracting Header from RawData (->IC_Header.bin)
+
+
+=========> S t a g e  4  -  Interpreting IC_Header
+
+Minimum Loader Version: 00.00.00 (for ex. ioncube_loader_win_4.3.dll requires >0301010)
+VerData 0x00000003
+ObfuFlags 00000000 00000000
+
+ObfuFuncHashSeed: 
+Bytecode_XorKey: 92A764C5
+ -> The Encoder uses '0x92A764C5' to overwrite/delete the real bytecode key - since there is a LicenseFile(+enforceLicense) from which that value should be retrieved. (However don't worry we'll be able to calcuate that value if there is not LicFile. :)
+IncludeXorKey[should be 0xE9FC23B1]: E9FC23B1
+LicenseFile: lisensi.txt
+DisableCheckingOfLicenseRestrictions: 0
+LicensePassphrase: lisensi
+CustomErrCallbackHandler: 'ioncube_event_handler'
+Enable_auto_prepend_Append_file: 0
+Customised error messages entries: 0x00
+Include file protection entries: 0x00
+Adler32_CRC for '<?php //... ?>' and calculated MATCH. CRC: EB60391D
+IC_HeaderEx start: 0086
+IC_HeaderEx end: 00AE   IC_Header HeaderSize: 00BE
+
+=========> S t a g e  5  -  Interpreting IC_HeaderEx
+
+0001 <-IC_Type_Minor
+0005 <-IC_Type_Major
+The file [%s] was encoded with the PHP 5 ionCube Encoder, and requires PHP 5 to be installed.
+00000CE7 <-PhpFlags
+  0x0001  0001
+  0x0002  0002 
+  0x0004  0004 
+  0x0020  Allow run with untrusted server extensions
+  0x0040  PHP5_Body
+  0x0080  CmdBytesAreEncrypted
+  0x0400  EncryptStrings[KeyWord.c_Object] in memory during Compile& Execute
+  0x0800  ObfuscateStripLineNumbers
+
+IC Encoder Registration data(MemberID): 0x10050603  30754
+Calculate ByteCode_Key ('0x363432' + sum of the chars from LicensePassphrase): 00363729
+Overwrite ByteCode_Key to : 0x00363729
+Bytecode_MT_XorKey: 00363729
+Copy of IncludeXorKey in Header_MoreData: 0xE9FC23B1
+unknown Data: 8501A8C0 E3FC1B00 2690 00 00
+EvalTimeMin: 4/16/2012 8:10:00 AM   128330D1 '+0500DA46'=>4F8BD3D8 seconds since 1.1.1970
+EvalTimeMax: 4/16/2012 8:10:00 AM   4A8AF992 '+3D08A307'=>4F8BD3D8 seconds since 1.1.1970
+BodyStartOffset: 0x000000E5
+
+=========> S t a g e  6  -  Extracting & Inflating IC_body from RawData (->IC_body.bin)
+
+000000E9  Body_MT_Seed: 255BE5CE
+000000ED  Bytecode_MT_Seed: ED9C0680
+
+=========> S t a g e  7  -  Reading IC_body.bin
+
+
+=========> S t a g e  8  -  Read function body data
+
+Reading Body
+00000008 -> 00000002
+S2[Fixed Size 0x70]:
+0000007A ->  67736D02
+ Skipped3 ->  00000000
+ FuncNameStart ->  00000000 6F6D736D
+ CmdData ->  00000000
+ Args ->  00000000
+ ArgsMin ->  00000000
+ php4Extra ->  0446F198 3F700070 0248C4F0 049C04C8 0000000A 0000000A
+ Skipped1 ->  00000003 00000000 00000000
+ PHPFileNamePtr ->  FFFFFFFF
+ Php5-O1  00000000
+ Php5-O1Count  00000000 00000000 00000000 00000000 74730000 04D2A9A0 00007364 5349534D 00000000 00000000
+ 
+00000079 -> FunctionName:  static function {MainFunction}
+ 
+00000082 -> 0000000A<-CmdCount
+byteCmds[Elementsize=0x2] Elements: 0000000A
+Command(Encrypted)
+------------------
+0413
+017E
+018D
+07E2
+072C
+0729
+0705
+02B1
+02D9
+0095
+CmdParams[Elementsize=0x14] Elements: 00000011
+Type      Op1       Op2       Flags5    Flags
+---------------------------------------------
+00000001   00000002   0000000B   00000002   00420103
+00000004   00000000   00000001   00000000   00000000
+00000002   00000018   00000000   00000000   00000000
+00000002   00000018   00000000   00000000   00000000
+00000002   00000018   00000000   00000000   00000000
+00000001   0000000E   00000045   00000002   00420103
+00000004   00000030   00000000   00000000   00000000
+00000001   00000054   0000000B   00000002   00420103
+00000008   00000000   00000001   00000000   00000000
+00000002   00000018   00000000   00000000   00000000
+00000002   00000018   00000000   00000000   00000000
+00000004   00000030   00000000   00000000   00000000
+00000002   00000018   00000000   00000000   00000000
+00000002   00000018   00000000   00000000   00000000
+00000001   00000060   000000E2   00000002   00420103
+00000002   00000018   00000000   00000000   00000000
+00000001   00000001   00000038   00000002   00120101
+StringData [00000143]
+00000339 -> C0 DE 70 65 72 69 6B 73 61 72 6F 6F 74 00 0D 0A 09 09 3C 64 69 76 20 69 64 3D 22 73 69 74 65 49 6E 66 6F 22 3E 0D 0A 77 77 77 2E 73 74 6D 69 6B 75 62 75 64 69 79 61 68 2E 61 63 2E 69 64 0D 0A 20 20 20 20 3C 21 2D 2D 20 0D 0A 20 20 20 20 20 20 20 20 00 6E 61 6D 61 70 72 6F 67 72 61 6D 00 20 26 63 6F 70 79 3B 20 53 75 74 65 6B 69 2D 54 65 63 68 20 28 3C 61 20 63 6C 61 73 73 3D 67 6C 69 6E 6B 20 73 74 79 6C 65 3D 22 62 6F 72 64 65 72 3A 6E 6F 6E 65 22 20 20 0D 0A 09 09 09 09 68 72 65 66 3D 27 68 74 74 70 3A 2F 2F 77 77 77 2E 73 75 74 65 6B 69 2E 63 6F 2E 69 64 27 3E 77 77 77 2E 73 75 74 65 6B 69 2E 63 6F 2E 69 64 3C 2F 61 3E 29 2E 20 20 0D 0A 09 09 09 09 20 53 61 72 61 6E 20 64 61 6E 20 6B 72 69 74 69 6B 20 79 61 6E 67 20 6D 65 6D 62 61 6E 67 75 6E 2C 20 6B 69 72 69 6D 6B 61 6E 20 6B 65 20 69 6E 66 6F 40 73 75 74 65 6B 69 2E 63 6F 2E 69 64 0D 0A 09 09 09 09 20 2D 2D 3E 0D 0A 09 09 09 3C 2F 64 69 76 3E 3C 21 2D 2D 73 69 74 65 49 6E 66 6F 20 2D 2D 3E 0D 0A 00 
+ÀÞperiksaroot.
+		<div id="siteInfo">
+www.stmikubudiyah.ac.id
+    <!-- 
+        .namaprogram. &copy; Suteki-Tech (<a class=glink style="border:none"  
+				href='http://www.suteki.co.id'>www.suteki.co.id</a>).  
+				 Saran dan kritik yang membangun, kirimkan ke info@suteki.co.id
+				 -->
+			</div><!--siteInfo -->
+.
+Length of unprocessed data: 00000004
+
+=========> S t a g e  9  -  Interpreting IC_body/ByteCode
+
+#0000: 0x3B ZEND_INIT_FCALL_BY_NAME   LineNo: 0x0000  Flags: 0x04()
+op2   : 01->CONST   00000002 0000000B  02  03->STRING 01->ref 0042
+        KeyWord: periksaroot
+----------------------------------------------------------------
+[1] 'periksaroot
+....................................................................
+Buf: echo "[Obfuscated]0D 0A 09 20 20 20 3C 6C 69 6E 6B 20 72 65 6C 3D 22 73 74 79 6C 65 73 68 65 65 74 22 20 68 72 65 66 3D 22 ".$root."css/hmenu.css" type="text/css" />"echo "[Obfuscated]0D 0A 09 20 20 20 3C 6C 69 6E 6B 20 72 65 6C 3D 22 73 74 79 6C 65 73 68 65 65 74 22 20 68 72 65 66 3D 22 ".$root."css/vmenu.css" type="text/css" />"echo "[Obfuscated]0D 0A 09 3C 21 2D 2D 5B 69 66 20 6C 74 65 20 49 45 20 36 5D 3E 0D 0A 09 3C 6C 69 6E 6B 20 68 72 65 66 3D 22 ".$root."css/iehackc.css" rel="stylesheet" type="text/css" />\n	<![endif]--> \n	<!--[if lte IE 7]>\n	<link href="".$root."css/iehackc.css" rel="stylesheet" type="text/css" />\n	<![endif]--> \n	</head>\n	"Return (1)
+______________________________________________________________________
+#0001: 0x3D ZEND_DO_FCALL_BY_NAME   LineNo: 0x0000  Flags: 0x01()
+result: 04->VAR     00000000 00000001  00  00->NULL   00->val 0000
+====================================================================
+echo "[Obfuscated]0D 0A 09 20 20 20 3C 6C 69 6E 6B 20 72 65 6C 3D 22 73 74 79 6C 65 73 68 65 65 74 22 20 68 72 65 66 3D 22 ".$root."css/hmenu.css" type="text/css" />"echo "[Obfuscated]0D 0A 09 20 20 20 3C 6C 69 6E 6B 20 72 65 6C 3D 22 73 74 79 6C 65 73 68 65 65 74 22 20 68 72 65 66 3D 22 ".$root."css/vmenu.css" type="text/css" />"echo "[Obfuscated]0D 0A 09 3C 21 2D 2D 5B 69 66 20 6C 74 65 20 49 45 20 36 5D 3E 0D 0A 09 3C 6C 69 6E 6B 20 68 72 65 66 3D 22 ".$root."css/iehackc.css" rel="stylesheet" type="text/css" />\n	<![endif]--> \n	<!--[if lte IE 7]>\n	<link href="".$root."css/iehackc.css" rel="stylesheet" type="text/css" />\n	<![endif]--> \n	</head>\n	"Return (1)periksaroot();
+______________________________________________________________________
+#0002: 0x35 ZEND_INIT_STRING   LineNo: 0x0000  Flags: 0x01()
+result: 02->TMP_VAR 00000018 00000000  00  00->NULL   00->val 0000
+______________________________________________________________________
+#0003: 0x37 ZEND_ADD_STRING   LineNo: 0x0000  Flags: 0x07()
+result: 02->TMP_VAR 00000018 00000000  00  00->NULL   00->val 0000
+op1   : 02->TMP_VAR 00000018 00000000  00  00->NULL   00->val 0000
+op2   : 01->CONST   0000000E 00000045  02  03->STRING 01->ref 0042
+        KeyWord: [Obfuscated]0D 0A 09 09 3C 64 69 76 20 69 64 3D 22 73 69 74 65 49 6E 66 6F 22 3E 0D 0A 77 77 77 2E 73 74 6D 69 6B 75 62 75 64 69 79 61 68 2E 61 63 2E 69 64 0D 0A 20 20 20 20 3C 21 2D 2D 20 0D 0A 20 20 20 20 20 20 20 20 
+______________________________________________________________________
+#0004: 0x50 ZEND_FETCH_R   LineNo: 0x0000  Flags: 0x07()
+result: 04->VAR     00000030 00000000  00  00->NULL   00->val 0000
+op1   : 01->CONST   00000054 0000000B  02  03->STRING 01->ref 0042
+        KeyWord: namaprogram
+op2   : 08->UNUSED  00000000 00000001  00  00->NULL   00->val 0000
+----------------------------------------------------------------
+[1] '$namaprogram
+______________________________________________________________________
+#0005: 0x38 ZEND_ADD_VAR   LineNo: 0x0000  Flags: 0x07()
+result: 02->TMP_VAR 00000018 00000000  00  00->NULL   00->val 0000
+op1   : 02->TMP_VAR 00000018 00000000  00  00->NULL   00->val 0000
+op2   : 04->VAR     00000030 00000000  00  00->NULL   00->val 0000
+______________________________________________________________________
+#0006: 0x37 ZEND_ADD_STRING   LineNo: 0x0000  Flags: 0x07()
+result: 02->TMP_VAR 00000018 00000000  00  00->NULL   00->val 0000
+op1   : 02->TMP_VAR 00000018 00000000  00  00->NULL   00->val 0000
+op2   : 01->CONST   00000060 000000E2  02  03->STRING 01->ref 0042
+        KeyWord:  &copy; Suteki-Tech (<a class=glink style="border:none"  
+				href='http://www.suteki.co.id'>www.suteki.co.id</a>).  
+				 Saran dan kritik yang membangun, kirimkan ke info@suteki.co.id
+				 -->
+			</div><!--siteInfo -->
+
+______________________________________________________________________
+#0007: 0x28 ZEND_ECHO   LineNo: 0x0000  Flags: 0x02()
+op1   : 02->TMP_VAR 00000018 00000000  00  00->NULL   00->val 0000
+______________________________________________________________________
+#0008: 0x3E ZEND_RETURN   LineNo: 0x0000  Flags: 0x02()
+op1   : 01->CONST   00000001 00000038  02  01->LONG   01->ref 0012
+====================================================================
+Return (1);
+______________________________________________________________________
+#0009: 0x95 ZEND_HANDLE_EXCEPTION   LineNo: 0x0000  Flags: 0x00()
+______________________________________________________________________
+FunctionsCount: 0000
+Classes: 0000
+File sucessfully processes!
+

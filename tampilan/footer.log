@@ -1,0 +1,402 @@
+========== Ioncube_Decoder 1.1.40  LogFile ==========
+
+=========> S t a g e  0  -  Getting RawData (UnBase64-Raw.bin)
+
+Opening C:\AppServ\www\siakad\tampilan\footer.php
+000003AF -> Start of ionCubeData...
+0000083A -> 0000048B Bytes read.
+IC_Base64_Marker: '4+oV' Decoding Base64->Bin...
+
+=========> S t a g e  1  -  Validating RawData
+
+ionCubeVersionType: 3CCC22E1 [Encrypted: 149FEC13]
+ioncube_Version_Type 3
+
+=========> S t a g e  2  -  Processing RawData
+
+RawBinData_Size: 0000070A
+FileSizeKey: 2395BBF5 (RawBinData_Size + 12321) Xor &H23958CDE
+Header_FileSizeKey: 2395BBF3
+Header_FileSizeKey and FileSizeKey are different! (Difference: 00000002)
+Note: RawBinData_Size calculate from Header_FileSizeKey is: 0000070C  (Difference: 00000002)
+Header_Size: 000000BE (InitKey for MT: 43E2C36C)
+Adler32_CRC for 'IC_Raw[0004]..[00DD]' and calculated MATCH. CRC: FB6F6F65
+
+=========> S t a g e  3  -  Extracting Header from RawData (->IC_Header.bin)
+
+
+=========> S t a g e  4  -  Interpreting IC_Header
+
+Minimum Loader Version: 00.00.00 (for ex. ioncube_loader_win_4.3.dll requires >0301010)
+VerData 0x00000003
+ObfuFlags 00000000 00000000
+
+ObfuFuncHashSeed: 
+Bytecode_XorKey: 0036928D
+IncludeXorKey[should be 0xE9FC23B1]: E9FC23B1
+LicenseFile: lisensi.txt
+DisableCheckingOfLicenseRestrictions: 1
+LicensePassphrase: lisensi
+CustomErrCallbackHandler: 'ioncube_event_handler'
+Enable_auto_prepend_Append_file: 0
+Customised error messages entries: 0x00
+Include file protection entries: 0x00
+Adler32_CRC for '<?php //... ?>' and calculated MATCH. CRC: EB60391D
+IC_HeaderEx start: 0086
+IC_HeaderEx end: 00AE   IC_Header HeaderSize: 00BE
+
+=========> S t a g e  5  -  Interpreting IC_HeaderEx
+
+0001 <-IC_Type_Minor
+0005 <-IC_Type_Major
+The file [%s] was encoded with the PHP 5 ionCube Encoder, and requires PHP 5 to be installed.
+00000CE7 <-PhpFlags
+  0x0001  0001
+  0x0002  0002 
+  0x0004  0004 
+  0x0020  Allow run with untrusted server extensions
+  0x0040  PHP5_Body
+  0x0080  CmdBytesAreEncrypted
+  0x0400  EncryptStrings[KeyWord.c_Object] in memory during Compile& Execute
+  0x0800  ObfuscateStripLineNumbers
+
+IC Encoder Registration data(MemberID): 0x10050603  30754
+Bytecode_MT_XorKey: 0036928D
+Copy of IncludeXorKey in Header_MoreData: 0xE9FC23B1
+unknown Data: 7D01A8C0 E3FC1B00 2690 00 00
+EvalTimeMin: 10/5/2012 4:13:15 AM   1365BB54 '+0500DA46'=>506E5E5B seconds since 1.1.1970
+EvalTimeMax: 10/5/2012 4:13:15 AM   4B6D8415 '+3D08A307'=>506E5E5B seconds since 1.1.1970
+BodyStartOffset: 0x000000E5
+
+=========> S t a g e  6  -  Extracting & Inflating IC_body from RawData (->IC_body.bin)
+
+000000E9  Body_MT_Seed: 891C00C2
+000000ED  Bytecode_MT_Seed: 8D102353
+
+=========> S t a g e  7  -  Reading IC_body.bin
+
+
+=========> S t a g e  8  -  Read function body data
+
+Reading Body
+00000008 -> 00000002
+S2[Fixed Size 0x70]:
+0000007A ->  09090A02
+ Skipped3 ->  00000000
+ FuncNameStart ->  00000000 2064743C
+ CmdData ->  00000000
+ Args ->  00000000
+ ArgsMin ->  00000000
+ php4Extra ->  023A5960 72650020 005C8650 023B67F0 00000018 00000018
+ Skipped1 ->  0000000E 00000000 00000000
+ PHPFileNamePtr ->  FFFFFFFF
+ Php5-O1  00000000
+ Php5-O1Count  00000000 00000000 00000000 00000000 74750000 023B84C0 393D657A 61657220 00000000 00000000
+ 
+00000079 -> FunctionName: private function {MainFunction}
+ 
+00000082 -> 00000018<-CmdCount
+byteCmds[Elementsize=0x2] Elements: 0000001A
+Command(Encrypted)
+------------------
+0445
+018F
+0707
+078E
+04F1
+0F57
+1ECF
+003D
+0990
+0723
+07D2
+0437
+0FA0
+1E98
+003D
+0909
+07C9
+07B5
+025C
+0524
+0708
+0772
+02C9
+02D5
+02C8
+0095
+CmdParams[Elementsize=0x14] Elements: 0000002E
+Type      Op1       Op2       Flags5    Flags
+---------------------------------------------
+00000001   00000002   0000000B   00000002   00420103
+00000004   00000000   00000001   00000000   00000000
+00000004   00000018   00000000   00000000   00000000
+00000001   0000000E   00000001   00000002   00420103
+00000008   00000000   00000001   00000000   00000000
+00000004   00000030   00000001   00000000   00000000
+00000004   00000018   00000010   00000000   00000000
+00000001   00000010   0000001D   00000002   00420103
+00000001   FFFFFE9F   0000000B   00000002   00420103
+00000004   00000060   00000000   00000000   00000000
+00000001   0000002E   00000001   00000002   00420103
+00000008   00000000   00000001   00000000   00000000
+00000004   00000060   00000010   00000000   00000000
+00000008   00000001   00000000   00000000   00000000
+00000004   00000078   00000000   00000000   00000000
+00000004   00000048   00000000   00000000   00000000
+00000001   00000030   00000001   00000002   00420103
+00000008   00000000   00000001   00000000   00000000
+00000004   00000090   00000001   00000000   00000000
+00000004   00000048   00000010   00000000   00000000
+00000004   00000078   00000008   00000000   00000000
+00000001   FFFFFEC2   00000011   00000002   00420103
+00000004   000000C0   00000000   00000000   00000000
+00000001   00000032   00000001   00000002   00420103
+00000008   00000000   00000001   00000000   00000000
+00000004   000000C0   00000010   00000000   00000000
+00000008   00000001   00000000   00000000   00000000
+00000004   000000D8   00000000   00000000   00000000
+00000004   000000A8   00000000   00000000   00000000
+00000001   00000034   00000001   00000002   00420103
+00000008   00000000   00000001   00000000   00000000
+00000004   000000F0   00000001   00000000   00000000
+00000004   000000A8   00000010   00000000   00000000
+00000004   000000D8   00000008   00000000   00000000
+00000001   00000036   0000007A   00000002   00420103
+00000002   00000120   00000000   00000000   00000000
+00000001   000000B2   0000000A   00000002   00420103
+00000004   00000108   00000000   00000000   00000000
+00000001   000000BE   00000001   00000002   00420103
+00000008   00000000   00000001   00000000   00000000
+00000004   00000138   00000000   00000000   00000000
+00000004   00000108   00000000   00000000   00000000
+00000002   00000120   00000000   00000000   00000000
+00000004   00000138   00000010   00000000   00000000
+00000001   000000C0   000000B0   00000002   00420103
+00000001   00000001   00000038   00000002   00120101
+StringData [00000171]
+000005CB -> C0 DE 70 65 72 69 6B 73 61 72 6F 6F 74 00 71 00 53 45 4C 45 43 54 20 2A 20 46 52 4F 4D 20 6D 73 70 74 69 20 4C 49 4D 49 54 20 30 2C 31 00 71 00 68 00 68 00 72 00 09 3C 2F 64 69 76 3E 0D 0A 3C 2F 64 69 76 3E 0D 0A 3C 21 2D 2D 20 42 65 67 69 6E 20 46 6F 6F 74 65 72 20 2D 2D 3E 0D 0A 3C 64 69 76 20 69 64 3D 22 66 6F 6F 74 65 72 22 3E 0D 0A 09 3C 70 20 63 6C 61 73 73 3D 22 74 72 61 64 65 6D 61 72 6B 73 22 3E 53 69 73 74 65 6D 20 49 6E 66 6F 72 6D 61 73 69 20 64 61 6E 20 4D 61 6E 61 6A 65 6D 65 6E 20 41 6B 61 64 65 6D 69 6B 20 00 00 4E 4D 50 54 49 4D 53 50 54 49 00 00 72 00 20 3C 62 72 2F 3E 20 44 65 76 65 6C 6F 70 65 64 20 62 79 20 26 23 31 36 39 3B 20 53 55 54 45 4B 49 20 7C 20 3C 61 20 73 74 79 6C 65 3D 22 63 6F 6C 6F 72 3A 23 46 43 30 3B 74 65 78 74 2D 64 65 63 6F 72 61 74 69 6F 6E 3A 6E 6F 6E 65 3B 22 20 68 72 65 66 3D 27 68 74 74 70 3A 2F 2F 77 77 77 2E 73 75 74 65 6B 69 2E 63 6F 2E 69 64 27 20 74 61 72 67 65 74 3D 62 6C 61 6E 6B 27 3E 20 73 75 74 65 6B 69 2E 63 6F 2E 69 64 20 3C 2F 61 3E 3C 2F 7
+ÀÞperiksaroot.q.SELECT * FROM mspti LIMIT 0,1.q.h.h.r.	</div>
+</div>
+<!-- Begin Footer -->
+<div id="footer">
+	<p class="trademarks">Sistem Informasi dan Manajemen Akademik ..NMPTIMSPTI..r. <br/> Developed by &#169; SUTEKI | <a style="color:#FC0;text-decoration:none;" href='http://www.suteki.co.id' target=blank'> suteki.co.id </a></p>
+</div>
+<!-- End Footer -->.
+Length of unprocessed data: 00000004
+
+=========> S t a g e  9  -  Interpreting IC_body/ByteCode
+
+#0000: 0x3B ZEND_INIT_FCALL_BY_NAME   LineNo: 0x0000  Flags: 0x04()
+op2   : 01->CONST   00000002 0000000B  02  03->STRING 01->ref 0042
+        KeyWord: periksaroot
+----------------------------------------------------------------
+[1] 'periksaroot
+....................................................................
+Buf: echo "[Obfuscated]0D 0A 09 20 20 20 3C 6C 69 6E 6B 20 72 65 6C 3D 22 73 74 79 6C 65 73 68 65 65 74 22 20 68 72 65 66 3D 22 ".$root."css/hmenu.css" type="text/css" />"echo "[Obfuscated]0D 0A 09 20 20 20 3C 6C 69 6E 6B 20 72 65 6C 3D 22 73 74 79 6C 65 73 68 65 65 74 22 20 68 72 65 66 3D 22 ".$root."css/vmenu.css" type="text/css" />"echo "[Obfuscated]0D 0A 09 3C 21 2D 2D 5B 69 66 20 6C 74 65 20 49 45 20 36 5D 3E 0D 0A 09 3C 6C 69 6E 6B 20 68 72 65 66 3D 22 ".$root."css/iehackc.css" rel="stylesheet" type="text/css" />\n	<![endif]--> \n	<!--[if lte IE 7]>\n	<link href="".$root."css/iehackc.css" rel="stylesheet" type="text/css" />\n	<![endif]--> \n	</head>\n	"Return (1)
+______________________________________________________________________
+#0001: 0x3D ZEND_DO_FCALL_BY_NAME   LineNo: 0x0000  Flags: 0x01()
+result: 04->VAR     00000000 00000001  00  00->NULL   00->val 0000
+====================================================================
+echo "[Obfuscated]0D 0A 09 20 20 20 3C 6C 69 6E 6B 20 72 65 6C 3D 22 73 74 79 6C 65 73 68 65 65 74 22 20 68 72 65 66 3D 22 ".$root."css/hmenu.css" type="text/css" />"echo "[Obfuscated]0D 0A 09 20 20 20 3C 6C 69 6E 6B 20 72 65 6C 3D 22 73 74 79 6C 65 73 68 65 65 74 22 20 68 72 65 66 3D 22 ".$root."css/vmenu.css" type="text/css" />"echo "[Obfuscated]0D 0A 09 3C 21 2D 2D 5B 69 66 20 6C 74 65 20 49 45 20 36 5D 3E 0D 0A 09 3C 6C 69 6E 6B 20 68 72 65 66 3D 22 ".$root."css/iehackc.css" rel="stylesheet" type="text/css" />\n	<![endif]--> \n	<!--[if lte IE 7]>\n	<link href="".$root."css/iehackc.css" rel="stylesheet" type="text/css" />\n	<![endif]--> \n	</head>\n	"Return (1)periksaroot();
+______________________________________________________________________
+#0002: 0x53 ZEND_FETCH_W   LineNo: 0x0000  Flags: 0x07()
+result: 04->VAR     00000018 00000000  00  00->NULL   00->val 0000
+op1   : 01->CONST   0000000E 00000001  02  03->STRING 01->ref 0042
+        KeyWord: q
+op2   : 08->UNUSED  00000000 00000001  00  00->NULL   00->val 0000
+----------------------------------------------------------------
+[1] '$q
+______________________________________________________________________
+#0003: 0x26 ZEND_ASSIGN   LineNo: 0x0000  Flags: 0x07()
+result: 04->VAR     00000030 00000001  00  00->NULL   00->val 0000
+op1   : 04->VAR     00000018 00000010  00  00->NULL   00->val 0000
+op2   : 01->CONST   00000010 0000001D  02  03->STRING 01->ref 0042
+        KeyWord: SELECT * FROM mspti LIMIT 0,1
+====================================================================
+$q="SELECT * FROM mspti LIMIT 0,1";
+______________________________________________________________________
+#0004: 0x3B ZEND_INIT_FCALL_BY_NAME   LineNo: 0x0000  Flags: 0x04()
+op2   : 01->CONST   FFFFFE9F 0000000B  02  03->STRING 01->ref 0042
+        KeyWord: mysql_query
+----------------------------------------------------------------
+[1] 'mysql_query
+______________________________________________________________________
+#0005: 0x5C ZEND_FETCH_FUNC_ARG   LineNo: 0x0000  Flags: 0x0F()
+result: 04->VAR     00000060 00000000  00  00->NULL   00->val 0000
+op1   : 01->CONST   0000002E 00000001  02  03->STRING 01->ref 0042
+        KeyWord: q
+op2   : 08->UNUSED  00000000 00000001  00  00->NULL   00->val 0000
+        extended_value(from Flag): 0001
+----------------------------------------------------------------
+[1] 'mysql_query
+[2] '$q
+______________________________________________________________________
+#0006: 0x42 ZEND_SEND_VAR   LineNo: 0x0000  Flags: 0x1E()
+op1   : 04->VAR     00000060 00000010  00  00->NULL   00->val 0000
+op2   : 08->UNUSED  00000001 00000000  00  00->NULL   00->val 0000
+        extended_value(from File): 003D
+----------------------------------------------------------------
+[1] 'mysql_query
+....................................................................
+Comment: SHOULD_BE_SENT_BY_REF
+______________________________________________________________________
+#0007: 0x3D ZEND_DO_FCALL_BY_NAME   LineNo: 0x0000  Flags: 0x09()
+result: 04->VAR     00000078 00000000  00  00->NULL   00->val 0000
+        extended_value(from Flag): 0001
+----------------------------------------------------------------
+[1] 'mysql_query($q)
+______________________________________________________________________
+#0008: 0x53 ZEND_FETCH_W   LineNo: 0x0000  Flags: 0x07()
+result: 04->VAR     00000048 00000000  00  00->NULL   00->val 0000
+op1   : 01->CONST   00000030 00000001  02  03->STRING 01->ref 0042
+        KeyWord: h
+op2   : 08->UNUSED  00000000 00000001  00  00->NULL   00->val 0000
+----------------------------------------------------------------
+[1] 'mysql_query($q)
+[2] '$h
+______________________________________________________________________
+#0009: 0x26 ZEND_ASSIGN   LineNo: 0x0000  Flags: 0x07()
+result: 04->VAR     00000090 00000001  00  00->NULL   00->val 0000
+op1   : 04->VAR     00000048 00000010  00  00->NULL   00->val 0000
+op2   : 04->VAR     00000078 00000008  00  00->NULL   00->val 0000
+====================================================================
+$h=mysql_query($q);
+______________________________________________________________________
+#000A: 0x3B ZEND_INIT_FCALL_BY_NAME   LineNo: 0x0000  Flags: 0x04()
+op2   : 01->CONST   FFFFFEC2 00000011  02  03->STRING 01->ref 0042
+        KeyWord: sqlfetcharray
+----------------------------------------------------------------
+[1] 'sqlfetcharray
+______________________________________________________________________
+#000B: 0x5C ZEND_FETCH_FUNC_ARG   LineNo: 0x0000  Flags: 0x0F()
+result: 04->VAR     000000C0 00000000  00  00->NULL   00->val 0000
+op1   : 01->CONST   00000032 00000001  02  03->STRING 01->ref 0042
+        KeyWord: h
+op2   : 08->UNUSED  00000000 00000001  00  00->NULL   00->val 0000
+        extended_value(from Flag): 0001
+----------------------------------------------------------------
+[1] 'sqlfetcharray
+[2] '$h
+______________________________________________________________________
+#000C: 0x42 ZEND_SEND_VAR   LineNo: 0x0000  Flags: 0x1E()
+op1   : 04->VAR     000000C0 00000010  00  00->NULL   00->val 0000
+op2   : 08->UNUSED  00000001 00000000  00  00->NULL   00->val 0000
+        extended_value(from File): 003D
+----------------------------------------------------------------
+[1] 'sqlfetcharray
+....................................................................
+Comment: SHOULD_BE_SENT_BY_REF
+______________________________________________________________________
+#000D: 0x3D ZEND_DO_FCALL_BY_NAME   LineNo: 0x0000  Flags: 0x09()
+result: 04->VAR     000000D8 00000000  00  00->NULL   00->val 0000
+        extended_value(from Flag): 0001
+----------------------------------------------------------------
+[1] 'sqlfetcharray($h)
+______________________________________________________________________
+#000E: 0x53 ZEND_FETCH_W   LineNo: 0x0000  Flags: 0x07()
+result: 04->VAR     000000A8 00000000  00  00->NULL   00->val 0000
+op1   : 01->CONST   00000034 00000001  02  03->STRING 01->ref 0042
+        KeyWord: r
+op2   : 08->UNUSED  00000000 00000001  00  00->NULL   00->val 0000
+----------------------------------------------------------------
+[1] 'sqlfetcharray($h)
+[2] '$r
+______________________________________________________________________
+#000F: 0x26 ZEND_ASSIGN   LineNo: 0x0000  Flags: 0x07()
+result: 04->VAR     000000F0 00000001  00  00->NULL   00->val 0000
+op1   : 04->VAR     000000A8 00000010  00  00->NULL   00->val 0000
+op2   : 04->VAR     000000D8 00000008  00  00->NULL   00->val 0000
+====================================================================
+$r=sqlfetcharray($h);
+______________________________________________________________________
+#0010: 0x28 ZEND_ECHO   LineNo: 0x0000  Flags: 0x02()
+op1   : 01->CONST   00000036 0000007A  02  03->STRING 01->ref 0042
+        KeyWord: 	</div>
+</div>
+<!-- Begin Footer -->
+<div id="footer">
+	<p class="trademarks">Sistem Informasi dan Manajemen Akademik 
+====================================================================
+echo "	</div>\n</div>\n<!-- Begin Footer -->\n<div id="footer">\n	<p class="trademarks">Sistem Informasi dan Manajemen Akademik ";
+______________________________________________________________________
+#0011: 0x63 ZEND_FETCH_CONSTANT   LineNo: 0x0000  Flags: 0x05()
+result: 02->TMP_VAR 00000120 00000000  00  00->NULL   00->val 0000
+op2   : 01->CONST   000000B2 0000000A  02  03->STRING 01->ref 0042
+        KeyWord: NMPTIMSPTI
+----------------------------------------------------------------
+[1] '	</div>
+</div>
+<!-- Begin Footer -->
+<div id="footer">
+	<p class="trademarks">Sistem Informasi dan Manajemen Akademik 
+______________________________________________________________________
+#0012: 0x50 ZEND_FETCH_R   LineNo: 0x0000  Flags: 0x07()
+result: 04->VAR     00000108 00000000  00  00->NULL   00->val 0000
+op1   : 01->CONST   000000BE 00000001  02  03->STRING 01->ref 0042
+        KeyWord: r
+op2   : 08->UNUSED  00000000 00000001  00  00->NULL   00->val 0000
+----------------------------------------------------------------
+[1] '	</div>
+</div>
+<!-- Begin Footer -->
+<div id="footer">
+	<p class="trademarks">Sistem Informasi dan Manajemen Akademik 
+[2] '$r
+______________________________________________________________________
+#0013: 0x51 ZEND_FETCH_DIM_R   LineNo: 0x0000  Flags: 0x07()
+result: 04->VAR     00000138 00000000  00  00->NULL   00->val 0000
+op1   : 04->VAR     00000108 00000000  00  00->NULL   00->val 0000
+op2   : 02->TMP_VAR 00000120 00000000  00  00->NULL   00->val 0000
+----------------------------------------------------------------
+[1] '	</div>
+</div>
+<!-- Begin Footer -->
+<div id="footer">
+	<p class="trademarks">Sistem Informasi dan Manajemen Akademik 
+[2] '$r
+______________________________________________________________________
+#0014: 0x28 ZEND_ECHO   LineNo: 0x0000  Flags: 0x02()
+op1   : 04->VAR     00000138 00000010  00  00->NULL   00->val 0000
+----------------------------------------------------------------
+[1] '	</div>
+</div>
+<!-- Begin Footer -->
+<div id="footer">
+	<p class="trademarks">Sistem Informasi dan Manajemen Akademik 
+[2] '$r
+______________________________________________________________________
+#0015: 0x28 ZEND_ECHO   LineNo: 0x0000  Flags: 0x02()
+op1   : 01->CONST   000000C0 000000B0  02  03->STRING 01->ref 0042
+        KeyWord:  <br/> Developed by &#169; SUTEKI | <a style="color:#FC0;text-decoration:none;" href='http://www.suteki.co.id' target=blank'> suteki.co.id </a></p>
+</div>
+<!-- End Footer -->
+----------------------------------------------------------------
+[1] '	</div>
+</div>
+<!-- Begin Footer -->
+<div id="footer">
+	<p class="trademarks">Sistem Informasi dan Manajemen Akademik 
+[2] '$r
+....................................................................
+Buf: echo " <br/> Developed by &#169; SUTEKI | <a style="color:#FC0;text-decoration:none;" href='http://www.suteki.co.id' target=blank'> suteki.co.id </a></p>\n</div>\n<!-- End Footer -->"
+______________________________________________________________________
+#0016: 0x3E ZEND_RETURN   LineNo: 0x0000  Flags: 0x02()
+op1   : 01->CONST   00000001 00000038  02  01->LONG   01->ref 0012
+----------------------------------------------------------------
+[1] '	</div>
+</div>
+<!-- Begin Footer -->
+<div id="footer">
+	<p class="trademarks">Sistem Informasi dan Manajemen Akademik 
+[2] '$r
+....................................................................
+Buf: echo " <br/> Developed by &#169; SUTEKI | <a style="color:#FC0;text-decoration:none;" href='http://www.suteki.co.id' target=blank'> suteki.co.id </a></p>\n</div>\n<!-- End Footer -->"Return (1)
+______________________________________________________________________
+#0017: 0x95 ZEND_HANDLE_EXCEPTION   LineNo: 0x0000  Flags: 0x00()
+______________________________________________________________________
+ERR: Decompiling this function is finish but there's still data on the decompile stack ->Dumping that data now...
+FunctionsCount: 0000
+Classes: 0000
+File sucessfully processes!
+

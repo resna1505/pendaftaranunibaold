@@ -1,0 +1,7 @@
+AuthName "pendaftaran.univbatam.ac.id statistics"
+AuthType Basic
+AuthUserFile /home/univbatam/domains/pendaftaran.univbatam.ac.id/.stats-htpasswd
+require valid-user
+<Files .stats-htpasswd>
+deny from all
+</Files>

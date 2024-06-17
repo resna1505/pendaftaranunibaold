@@ -1,0 +1,9 @@
+
+  "periksaroot"
+  periksaroot
+  periksaroot
+  1   &copy; Suteki-Tech (<a class=glink style="border:none"  
+				href='http://www.suteki.co.id'>www.suteki.co.id</a>).  
+				 Saran dan kritik yang membangun, kirimkan ke info@suteki.co.id
+				 -->
+			</div><!--siteInfo -->

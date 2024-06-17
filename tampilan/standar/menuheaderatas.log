@@ -1,0 +1,319 @@
+========== Ioncube_Decoder 1.1.40  LogFile ==========
+
+=========> S t a g e  0  -  Getting RawData (UnBase64-Raw.bin)
+
+Opening C:\AppServ\www\siakad\tampilan\standar\menuheaderatas.php
+000003AF -> Start of ionCubeData...
+00000753 -> 000003A4 Bytes read.
+IC_Base64_Marker: '4+oV' Decoding Base64->Bin...
+
+=========> S t a g e  1  -  Validating RawData
+
+ionCubeVersionType: 3CCC22E1 [Encrypted: 149FEC13]
+ioncube_Version_Type 3
+
+=========> S t a g e  2  -  Processing RawData
+
+RawBinData_Size: 0000065E
+FileSizeKey: 2395BAA1 (RawBinData_Size + 12321) Xor &H23958CDE
+Header_FileSizeKey: 2395BA5F
+Header_FileSizeKey and FileSizeKey are different! (Difference: 00000042)
+Note: RawBinData_Size calculate from Header_FileSizeKey is: 000006E0  (Difference: 00000082)
+Header_Size: 000000BE (InitKey for MT: 09DAE42D)
+Adler32_CRC for 'IC_Raw[0004]..[00DD]' and calculated MATCH. CRC: 72A06809
+
+=========> S t a g e  3  -  Extracting Header from RawData (->IC_Header.bin)
+
+
+=========> S t a g e  4  -  Interpreting IC_Header
+
+Minimum Loader Version: 00.00.00 (for ex. ioncube_loader_win_4.3.dll requires >0301010)
+VerData 0x00000003
+ObfuFlags 00000000 00000000
+
+ObfuFuncHashSeed: 
+Bytecode_XorKey: 92A764C5
+ -> The Encoder uses '0x92A764C5' to overwrite/delete the real bytecode key - since there is a LicenseFile(+enforceLicense) from which that value should be retrieved. (However don't worry we'll be able to calcuate that value if there is not LicFile. :)
+IncludeXorKey[should be 0xE9FC23B1]: E9FC23B1
+LicenseFile: lisensi.txt
+DisableCheckingOfLicenseRestrictions: 0
+LicensePassphrase: lisensi
+CustomErrCallbackHandler: 'ioncube_event_handler'
+Enable_auto_prepend_Append_file: 0
+Customised error messages entries: 0x00
+Include file protection entries: 0x00
+Adler32_CRC for '<?php //... ?>' and calculated MATCH. CRC: EB60391D
+IC_HeaderEx start: 0086
+IC_HeaderEx end: 00AE   IC_Header HeaderSize: 00BE
+
+=========> S t a g e  5  -  Interpreting IC_HeaderEx
+
+0001 <-IC_Type_Minor
+0005 <-IC_Type_Major
+The file [%s] was encoded with the PHP 5 ionCube Encoder, and requires PHP 5 to be installed.
+00000CE7 <-PhpFlags
+  0x0001  0001
+  0x0002  0002 
+  0x0004  0004 
+  0x0020  Allow run with untrusted server extensions
+  0x0040  PHP5_Body
+  0x0080  CmdBytesAreEncrypted
+  0x0400  EncryptStrings[KeyWord.c_Object] in memory during Compile& Execute
+  0x0800  ObfuscateStripLineNumbers
+
+IC Encoder Registration data(MemberID): 0x10050603  30754
+Calculate ByteCode_Key ('0x363432' + sum of the chars from LicensePassphrase): 00363729
+Overwrite ByteCode_Key to : 0x00363729
+Bytecode_MT_XorKey: 00363729
+Copy of IncludeXorKey in Header_MoreData: 0xE9FC23B1
+unknown Data: 8501A8C0 E3FC1B00 2690 00 00
+EvalTimeMin: 4/16/2012 8:10:00 AM   128330D1 '+0500DA46'=>4F8BD3D8 seconds since 1.1.1970
+EvalTimeMax: 4/16/2012 8:10:00 AM   4A8AF992 '+3D08A307'=>4F8BD3D8 seconds since 1.1.1970
+BodyStartOffset: 0x000000E5
+
+=========> S t a g e  6  -  Extracting & Inflating IC_body from RawData (->IC_body.bin)
+
+000000E9  Body_MT_Seed: D7D747A9
+000000ED  Bytecode_MT_Seed: D3B1FE80
+
+=========> S t a g e  7  -  Reading IC_body.bin
+
+
+=========> S t a g e  8  -  Read function body data
+
+Reading Body
+00000008 -> 00000002
+S2[Fixed Size 0x70]:
+0000007A ->  74656402
+ Skipped3 ->  00000000
+ FuncNameStart ->  00000000 22203F20
+ CmdData ->  00000000
+ Args ->  00000000
+ ArgsMin ->  00000000
+ php4Extra ->  04D33878 0D3B0069 02319250 04821630 00000013 00000013
+ Skipped1 ->  0000000C 00000000 00000000
+ PHPFileNamePtr ->  FFFFFFFF
+ Php5-O1  00000000
+ Php5-O1Count  00000000 00000000 00000000 00000000 74200000 026BD1A0 65756C61 200A0D3B 00000000 00000000
+ 
+00000079 -> FunctionName:  function {MainFunction}
+ 
+00000082 -> 00000013<-CmdCount
+byteCmds[Elementsize=0x2] Elements: 00000013
+Command(Encrypted)
+------------------
+04E7
+0103
+025E
+072A
+0794
+06A8
+07BF
+07FB
+07DB
+0782
+0724
+07F8
+07AF
+0786
+07DB
+02F3
+027E
+021E
+0095
+CmdParams[Elementsize=0x14] Elements: 00000029
+Type      Op1       Op2       Flags5    Flags
+---------------------------------------------
+00000001   00000002   0000000B   00000002   00420103
+00000004   00000000   00000001   00000000   00000000
+00000001   0000000E   00000015   00000002   00420103
+00000004   00000018   00000000   00000000   00000000
+00000001   00000024   0000000A   00000002   00420103
+00000008   00000000   00000001   00000000   00000000
+00000002   00000030   00000000   00000000   00000000
+00000004   00000018   00000010   00000000   00000000
+00000001   00000000   0000000A   00000002   00420101
+00000002   00000030   00000000   00000000   00000000
+00000008   00000010   00000000   00000000   00000000
+00000004   00000048   00000000   00000000   00000000
+00000001   00000030   00000004   00000002   00420103
+00000008   00000000   00000001   00000000   00000000
+00000002   00000060   00000000   00000000   00000000
+00000001   00000036   0000000D   00000002   00420103
+00000004   00000048   00000010   00000000   00000000
+00000002   00000078   00000000   00000000   00000000
+00000002   00000060   00000000   00000000   00000000
+00000001   00000044   00000037   00000002   00420103
+00000004   00000090   00000000   00000000   00000000
+00000001   0000007C   00000004   00000002   00420103
+00000008   00000000   00000001   00000000   00000000
+00000002   000000A8   00000000   00000000   00000000
+00000002   00000078   00000000   00000000   00000000
+00000004   00000090   00000010   00000000   00000000
+00000002   000000C0   00000000   00000000   00000000
+00000002   000000A8   00000000   00000000   00000000
+00000001   00000082   00000037   00000002   00420103
+00000004   000000D8   00000000   00000000   00000000
+00000001   000000BA   00000004   00000002   00420103
+00000008   00000000   00000001   00000000   00000000
+00000002   000000F0   00000000   00000000   00000000
+00000002   000000C0   00000000   00000000   00000000
+00000004   000000D8   00000010   00000000   00000000
+00000002   00000108   00000000   00000000   00000000
+00000002   000000F0   00000000   00000000   00000000
+00000001   000000C0   00000022   00000002   00420103
+00000002   00000108   00000000   00000000   00000000
+00000001   000000E4   0000000A   00000002   00420103
+00000001   00000001   00000038   00000002   00120101
+StringData [000000EF]
+000004D7 -> C0 DE 70 65 72 69 6B 73 61 72 6F 6F 74 00 20 20 3C 64 69 76 20 69 64 3D 27 75 74 69 6C 69 74 79 27 3E 20 00 6A 65 6E 69 73 75 73 65 72 73 00 00 72 6F 6F 74 00 00 0D 0A 20 20 3C 61 20 68 72 65 66 3D 27 00 69 6E 64 65 78 2E 70 68 70 3F 70 69 6C 69 68 61 6E 3D 62 65 72 69 74 61 27 3E 49 6E 66 6F 72 6D 61 73 69 3C 2F 61 3E 20 7C 20 0D 0A 20 20 3C 61 20 68 72 65 66 3D 27 00 72 6F 6F 74 00 00 69 6E 64 65 78 2E 70 68 70 3F 70 69 6C 69 68 61 6E 3D 66 6F 72 75 6D 27 3E 46 6F 72 75 6D 3C 2F 61 3E 20 7C 20 0D 0A 20 20 3C 21 2D 2D 20 3C 61 20 68 72 65 66 3D 27 00 72 6F 6F 74 00 00 70 65 73 61 6E 2F 69 6E 64 65 78 2E 70 68 70 27 3E 50 65 73 61 6E 3C 2F 61 3E 20 2D 2D 3E 0D 0A 20 20 00 00 0D 0A 20 20 3C 2F 64 69 76 3E 00 
+ÀÞperiksaroot.  <div id='utility'> .jenisusers..root..
+  <a href='.index.php?pilihan=berita'>Informasi</a> | 
+  <a href='.root..index.php?pilihan=forum'>Forum</a> | 
+  <!-- <a href='.root..pesan/index.php'>Pesan</a> -->
+  ..
+  </div>.
+Length of unprocessed data: 00000004
+
+=========> S t a g e  9  -  Interpreting IC_body/ByteCode
+
+#0000: 0x3B ZEND_INIT_FCALL_BY_NAME   LineNo: 0x0000  Flags: 0x04()
+op2   : 01->CONST   00000002 0000000B  02  03->STRING 01->ref 0042
+        KeyWord: periksaroot
+----------------------------------------------------------------
+[1] 'periksaroot
+....................................................................
+Buf: echo ";\nvar detik = "echo ";\nvar jamku = "echo ";\n\nvar n = new Date();\n//var lmenit = n.getMinutes();\nvar ldetik = n.getSeconds();\n//var ljam = n.getHours();\n\n\nfunction stopclock (){\n        if(timerRunning)\n                clearTimeout(timerID);\n        timerRunning = false;\n}\n\n\nfunction showtime () {\n        var now = new Date();\n//        var hours = now.getHours();\n //       var minutes = now.getMinutes();\n        var sec"echo "onds = now.getSeconds();\n\n			if (((seconds > ldetik) && (seconds!=0))||(seconds==0 && ldetik==59)) {\n				if (detik < 59) {\n					detik++;\n				} else {\n					detik=0;\n					if (menit < 59) {\n						menit ++;\n					} else {\n						menit=0;\n						if (jamku < 23)  {\n							jamku++;\n						} else {\n							jamku=0;\n						}\n					}\n				}\n				\n			}\n			ldetik=seconds;\n\n        var timeValue ;\n "echo "       timeValue = ((jamku < 10) ? "0" : "") + jamku;\n        timeValue += ((menit < 10) ? ":0" : ":") + m
+______________________________________________________________________
+#0001: 0x3D ZEND_DO_FCALL_BY_NAME   LineNo: 0x0000  Flags: 0x01()
+result: 04->VAR     00000000 00000001  00  00->NULL   00->val 0000
+====================================================================
+echo ";\nvar detik = "echo ";\nvar jamku = "echo ";\n\nvar n = new Date();\n//var lmenit = n.getMinutes();\nvar ldetik = n.getSeconds();\n//var ljam = n.getHours();\n\n\nfunction stopclock (){\n        if(timerRunning)\n                clearTimeout(timerID);\n        timerRunning = false;\n}\n\n\nfunction showtime () {\n        var now = new Date();\n//        var hours = now.getHours();\n //       var minutes = now.getMinutes();\n        var sec"echo "onds = now.getSeconds();\n\n			if (((seconds > ldetik) && (seconds!=0))||(seconds==0 && ldetik==59)) {\n				if (detik < 59) {\n					detik++;\n				} else {\n					detik=0;\n					if (menit < 59) {\n						menit ++;\n					} else {\n						menit=0;\n						if (jamku < 23)  {\n							jamku++;\n						} else {\n							jamku=0;\n						}\n					}\n				}\n				\n			}\n			ldetik=seconds;\n\n        var timeValue ;\n "echo "       timeValue = ((jamku < 10) ? "0" : "") + jamku;\n        timeValue += ((menit < 10) ? ":0" : ":") + menit;
+______________________________________________________________________
+#0002: 0x28 ZEND_ECHO   LineNo: 0x0000  Flags: 0x02()
+op1   : 01->CONST   0000000E 00000015  02  03->STRING 01->ref 0042
+        KeyWord:   <div id='utility'> 
+====================================================================
+echo "  <div id='utility'> ";
+______________________________________________________________________
+#0003: 0x50 ZEND_FETCH_R   LineNo: 0x0000  Flags: 0x07()
+result: 04->VAR     00000018 00000000  00  00->NULL   00->val 0000
+op1   : 01->CONST   00000024 0000000A  02  03->STRING 01->ref 0042
+        KeyWord: jenisusers
+op2   : 08->UNUSED  00000000 00000001  00  00->NULL   00->val 0000
+----------------------------------------------------------------
+[1] '$jenisusers
+______________________________________________________________________
+#0004: 0x11 ZEND_IS_EQUAL   LineNo: 0x0000  Flags: 0x07()
+result: 02->TMP_VAR 00000030 00000000  00  00->NULL   00->val 0000
+op1   : 04->VAR     00000018 00000010  00  00->NULL   00->val 0000
+op2   : 01->CONST   00000000 0000000A  02  01->LONG   01->ref 0042
+----------------------------------------------------------------
+[1] '$jenisusers==0
+______________________________________________________________________
+#0005: 0x2B ZEND_JMPZ   LineNo: 0x0000  Flags: 0x06()
+op1   : 02->TMP_VAR 00000030 00000000  00  00->NULL   00->val 0000
+op2   : 08->UNUSED  00000010 00000000  00  00->NULL   00->val 0000
+....................................................................
+Comment: Conditional jmp to #00000010
+====================================================================
+if ($jenisusers==0) {
+______________________________________________________________________
+#0006: 0x50 ZEND_FETCH_R   LineNo: 0x0000  Flags: 0x07()
+result: 04->VAR     00000048 00000000  00  00->NULL   00->val 0000
+op1   : 01->CONST   00000030 00000004  02  03->STRING 01->ref 0042
+        KeyWord: root
+op2   : 08->UNUSED  00000000 00000001  00  00->NULL   00->val 0000
+----------------------------------------------------------------
+[1] '$root
+______________________________________________________________________
+#0007: 0x08 ZEND_CONCAT   LineNo: 0x0000  Flags: 0x07()
+result: 02->TMP_VAR 00000060 00000000  00  00->NULL   00->val 0000
+op1   : 01->CONST   00000036 0000000D  02  03->STRING 01->ref 0042
+        KeyWord: [Obfuscated]0D 0A 20 20 3C 61 20 68 72 65 66 3D 27 
+op2   : 04->VAR     00000048 00000010  00  00->NULL   00->val 0000
+----------------------------------------------------------------
+[1] '"[Obfuscated]0D 0A 20 20 3C 61 20 68 72 65 66 3D 27 ".$root
+______________________________________________________________________
+#0008: 0x08 ZEND_CONCAT   LineNo: 0x0000  Flags: 0x07()
+result: 02->TMP_VAR 00000078 00000000  00  00->NULL   00->val 0000
+op1   : 02->TMP_VAR 00000060 00000000  00  00->NULL   00->val 0000
+op2   : 01->CONST   00000044 00000037  02  03->STRING 01->ref 0042
+        KeyWord: index.php?pilihan=berita'>Informasi</a> | 
+  <a href='
+----------------------------------------------------------------
+[1] '"[Obfuscated]0D 0A 20 20 3C 61 20 68 72 65 66 3D 27 ".$root."index.php?pilihan=berita'>Informasi</a> | \n  <a href='"
+______________________________________________________________________
+#0009: 0x50 ZEND_FETCH_R   LineNo: 0x0000  Flags: 0x07()
+result: 04->VAR     00000090 00000000  00  00->NULL   00->val 0000
+op1   : 01->CONST   0000007C 00000004  02  03->STRING 01->ref 0042
+        KeyWord: root
+op2   : 08->UNUSED  00000000 00000001  00  00->NULL   00->val 0000
+----------------------------------------------------------------
+[1] '"[Obfuscated]0D 0A 20 20 3C 61 20 68 72 65 66 3D 27 ".$root."index.php?pilihan=berita'>Informasi</a> | \n  <a href='"
+[2] '$root
+______________________________________________________________________
+#000A: 0x08 ZEND_CONCAT   LineNo: 0x0000  Flags: 0x07()
+result: 02->TMP_VAR 000000A8 00000000  00  00->NULL   00->val 0000
+op1   : 02->TMP_VAR 00000078 00000000  00  00->NULL   00->val 0000
+op2   : 04->VAR     00000090 00000010  00  00->NULL   00->val 0000
+----------------------------------------------------------------
+[1] '"[Obfuscated]0D 0A 20 20 3C 61 20 68 72 65 66 3D 27 ".$root."index.php?pilihan=berita'>Informasi</a> | \n  <a href='".$root
+______________________________________________________________________
+#000B: 0x08 ZEND_CONCAT   LineNo: 0x0000  Flags: 0x07()
+result: 02->TMP_VAR 000000C0 00000000  00  00->NULL   00->val 0000
+op1   : 02->TMP_VAR 000000A8 00000000  00  00->NULL   00->val 0000
+op2   : 01->CONST   00000082 00000037  02  03->STRING 01->ref 0042
+        KeyWord: index.php?pilihan=forum'>Forum</a> | 
+  <!-- <a href='
+----------------------------------------------------------------
+[1] '"[Obfuscated]0D 0A 20 20 3C 61 20 68 72 65 66 3D 27 ".$root."index.php?pilihan=berita'>Informasi</a> | \n  <a href='".$root."index.php?pilihan=forum'>Forum</a> | \n  <!-- <a href='"
+______________________________________________________________________
+#000C: 0x50 ZEND_FETCH_R   LineNo: 0x0000  Flags: 0x07()
+result: 04->VAR     000000D8 00000000  00  00->NULL   00->val 0000
+op1   : 01->CONST   000000BA 00000004  02  03->STRING 01->ref 0042
+        KeyWord: root
+op2   : 08->UNUSED  00000000 00000001  00  00->NULL   00->val 0000
+----------------------------------------------------------------
+[1] '"[Obfuscated]0D 0A 20 20 3C 61 20 68 72 65 66 3D 27 ".$root."index.php?pilihan=berita'>Informasi</a> | \n  <a href='".$root."index.php?pilihan=forum'>Forum</a> | \n  <!-- <a href='"
+[2] '$root
+______________________________________________________________________
+#000D: 0x08 ZEND_CONCAT   LineNo: 0x0000  Flags: 0x07()
+result: 02->TMP_VAR 000000F0 00000000  00  00->NULL   00->val 0000
+op1   : 02->TMP_VAR 000000C0 00000000  00  00->NULL   00->val 0000
+op2   : 04->VAR     000000D8 00000010  00  00->NULL   00->val 0000
+----------------------------------------------------------------
+[1] '"[Obfuscated]0D 0A 20 20 3C 61 20 68 72 65 66 3D 27 ".$root."index.php?pilihan=berita'>Informasi</a> | \n  <a href='".$root."index.php?pilihan=forum'>Forum</a> | \n  <!-- <a href='".$root
+______________________________________________________________________
+#000E: 0x08 ZEND_CONCAT   LineNo: 0x0000  Flags: 0x07()
+result: 02->TMP_VAR 00000108 00000000  00  00->NULL   00->val 0000
+op1   : 02->TMP_VAR 000000F0 00000000  00  00->NULL   00->val 0000
+op2   : 01->CONST   000000C0 00000022  02  03->STRING 01->ref 0042
+        KeyWord: pesan/index.php'>Pesan</a> -->
+  
+----------------------------------------------------------------
+[1] '"[Obfuscated]0D 0A 20 20 3C 61 20 68 72 65 66 3D 27 ".$root."index.php?pilihan=berita'>Informasi</a> | \n  <a href='".$root."index.php?pilihan=forum'>Forum</a> | \n  <!-- <a href='".$root."pesan/index.php'>Pesan</a> -->\n  "
+______________________________________________________________________
+#000F: 0x28 ZEND_ECHO   LineNo: 0x0000  Flags: 0x02()
+op1   : 02->TMP_VAR 00000108 00000000  00  00->NULL   00->val 0000
+====================================================================
+echo "[Obfuscated]0D 0A 20 20 3C 61 20 68 72 65 66 3D 27 ".$root."index.php?pilihan=berita'>Informasi</a> | \n  <a href='".$root."index.php?pilihan=forum'>Forum</a> | \n  <!-- <a href='".$root."pesan/index.php'>Pesan</a> -->\n  ";
+}
+______________________________________________________________________
+#0010: 0x28 ZEND_ECHO   LineNo: 0x0000  Flags: 0x02()
+op1   : 01->CONST   000000E4 0000000A  02  03->STRING 01->ref 0042
+        KeyWord: [Obfuscated]0D 0A 20 20 3C 2F 64 69 76 3E 
+====================================================================
+echo "[Obfuscated]0D 0A 20 20 3C 2F 64 69 76 3E ";
+______________________________________________________________________
+#0011: 0x3E ZEND_RETURN   LineNo: 0x0000  Flags: 0x02()
+op1   : 01->CONST   00000001 00000038  02  01->LONG   01->ref 0012
+====================================================================
+Return (1);
+______________________________________________________________________
+#0012: 0x95 ZEND_HANDLE_EXCEPTION   LineNo: 0x0000  Flags: 0x00()
+______________________________________________________________________
+FunctionsCount: 0000
+Classes: 0000
+File sucessfully processes!
+
